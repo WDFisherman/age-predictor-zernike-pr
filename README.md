@@ -19,8 +19,8 @@
 ## Functionaliteiten
 
 * Leeftijd voorspelling op basis van:
-    - Flexibiliteit: proefpersoon gaat voorover buigen, ander iemand gaat kijken hoe ver de handen van de proefpersoon van de grond rijkt.
-    - Reactiesnelheid: proefpersoon drukt op knop bij computer en wacht op verandering van kleur en drukt weer op knop voor meting reactie snelheid.
+    - Flexibiliteit: proefpersoon gaat voorover buigen, ander iemand gaat kijken hoe ver de handen van de proefpersoon van zijn/haar enkelbot rijkt in cm.
+    - Reactiesnelheid: proefpersoon drukt op knop bij computer en wacht op verandering van kleur en drukt weer op knop voor meting reactie snelheid in ms.
     - Balans: proefpersoon staat op 1 been tot 1 minuut lang en geeft aan hoeveel seconden hij/zij het heeft volgehouden.
     - Medicatie: proefpersoon geeft aan hoeveel verschillende soorten medicatie hij/zij heeft genomen in zijn/haar leven.
 * Gegevens opslaan voor toekomstig gebruik van AI.
