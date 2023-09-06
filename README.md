@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h4 align="center">Een simpele leeftijd voorspeller op basis van biometrie.</h4>
+<h4 align="center">Een simpele leeftijd voorspeller op basis van biometrie gegeven door proefpersonen/bezoekers van de website.</h4>
 
 
 <p align="center">
@@ -20,11 +20,14 @@
 
 * Leeftijd voorspelling op basis van:
     - Flexibiliteit: proefpersoon gaat voorover buigen, ander iemand gaat kijken hoe ver de handen van de proefpersoon van de grond rijkt.
-    - Reactiesnelheid: proefpersoon drukt op knop bij computer en wacht op verandering van kleur en drukt weer op knop voor meting reactie snelheid
-    - [onbekend]
-    - Medicatie: proefpersoon geeft aan hoeveel medicatie hij/zij heeft genomen afgelopen tijd
-* Gegevens opslaan voor toekomstig gebruik van AI
+    - Reactiesnelheid: proefpersoon drukt op knop bij computer en wacht op verandering van kleur en drukt weer op knop voor meting reactie snelheid.
+    - Balans: proefpersoon staat op 1 been tot 1 minuut lang en geeft aan hoeveel seconden hij/zij het heeft volgehouden.
+    - Medicatie: proefpersoon geeft aan hoeveel verschillende soorten medicatie hij/zij heeft genomen in zijn/haar leven.
+* Gegevens opslaan voor toekomstig gebruik van AI.
 
+
+## Methode
+De ingevulde gegevens van de proefpersoon worden omgerekend in punten, deze punten worden bij elkaar op geteld en door 4 gedeeld waaruit een nummer uitkomt die iemands leeftijd geraden moet hebben. Deze punten berekening is deels wetenschappelijk gebasseerd, maar kan niet als feitelijk worden omschreven. 
 
 ## Doel van de website
 Deze website is bedoeld voor het enthoushast maken van aankomende studenten over het vakgebied informatica binnen de biowetenschappen. Dit met de achterliggende projecten Zpannend zernike en de open dagen van de Hanzehogeschool. 
@@ -52,10 +55,10 @@ In de project map:
 # Installeer dependencies
 $ npm install
 
-# Run de app
+# Start de app
 $ npm run quickStart
 
-# Bij aanpassingen van broncode
+# Start de app bij aanpassingen van broncode
 $ npm run start
 ```
 
