@@ -1,0 +1,224 @@
+body {
+    margin: 0 1em;
+}
+body>div {
+    display: flex;
+}
+
+
+div#background-info {
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 2px black;
+    margin: 2em;
+    width: 40%;
+}
+div#background-info h1>cite {
+    font-size: x-small;
+}
+div#interactive {
+    margin: 2em;
+    width: 60%;
+    height: 36em;
+    display: flex;
+    flex-direction: column;
+}
+div#interactive>#tasks {
+    flex-grow: 2;
+}
+div#interactive>hr {
+    height: 1px;
+    width: 100%;
+}
+
+#interactive h2:first-of-type, #ground-reaching-guy {
+    display: inline-block;
+    position: relative;
+}
+#interactive figure#ground-reaching-guy {
+    width: 140px;
+    height: 100px;
+    margin: 0 1rem;
+    float: right;
+}
+#interactive figure#ground-reaching-guy img {
+    width: 64%;
+    /* height: 100%; */
+}
+
+#timing-spd {
+    display: flex;
+    align-items: center;
+}
+#interactive figure#old-woman-speedy {
+    width: 100px;
+    margin: 0 1rem;
+    margin-left: 5rem;
+}
+#interactive figure#old-woman-speedy img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#interactive figure#ground-reaching-guy figcaption, 
+#interactive figure#old-woman-speedy figcaption {
+    font-size: 0.6em;
+    display: inline;
+}
+
+div#balance input {
+    height: 38px;
+    width: 230px;
+    font-size: 1em;
+    border-radius: 0.6rem;
+}
+
+.slider, #timer, #results, #true-age {
+    --background-thumb: rgb(255,120, 0);
+    --background-thumb-active: rgb(255, 166, 89);
+    --background-thumb-inactive: rgb(160, 160, 160);
+}
+
+/*>> https://codepen.io/DeyJordan/pen/poQvgaz*/
+.slider input[type="range"] {
+  appearance: none;
+  height: 1.5rem;
+  width: 25rem;
+  border-radius: .6rem;
+  padding: .5rem 0rem;
+  background: #FFF;
+  border: solid var(--background-thumb);
+  cursor: pointer;
+}
+.slider input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 6rem;
+    height: 2.7rem;
+    transform: scale(1.025, 1);
+    cursor: pointer;
+    background-color: var(--background-thumb);
+    border-radius: .6rem;
+    border: solid #AE5A21;
+}
+ /* For Firfox support */
+ /* Can't be fusioned with previous selector... */
+.slider input[type="range"]::-moz-range-thumb {
+   appearance: none;
+   width: 1.4rem;
+   height: 1.4rem;
+   cursor: pointer;
+   transition: .5s;
+   border: solid #AE5A21;
+}
+/*<< */
+
+.slider .num {
+    user-select: none;
+    pointer-events: none;
+    color: #ffffff;
+    z-index: 2;
+    display: inline;
+    position: absolute;
+}
+div.slider .num {
+    transform: translate(var(--transform-left), 14px);
+}
+
+div#timer {
+    display: inline-block;
+    width: 7rem;
+    text-align: center;
+    padding: 1.6rem 0;
+    color: #FFF;
+    border-radius: .6rem;
+    border: solid #AE5A21;
+}
+div#timer.completed {
+    background-color: var(--background-thumb);
+}
+div#timer.preset {
+    background-color: var(--background-thumb-inactive);
+}
+div#timer.operable {
+    background-color: black;
+}
+div#timer.powered_state {
+    background-color: blue;
+}
+div#timer.failed {
+    background-color: crimson;
+}
+
+div#results {
+    min-height: 160px;
+}
+div#results {
+    display: flex;
+    align-items: center;
+}
+div#results>#img {
+    float: left;
+    min-height: 40px;
+    height: 90%;
+}
+div#results>div#img figure {
+    height: 100%;
+    margin: 0;
+}
+div#results>div#img img {
+    height: 90%;
+}
+div#results>div#img figcaption {
+    font-size: .6em;
+    max-width: 180px;
+}
+div#results>.num {
+    box-sizing: border-box;
+    width: auto;
+    height: 100%;
+    max-height: 180px;
+    padding: 2em;
+}
+div#results>.num span>span {
+    font-size: 1.5em;
+}
+div#results>input {
+    user-select: none;
+    text-align: center;
+    padding: 1.6rem 10px;
+    cursor: pointer;
+    background-color: var(--background-thumb);
+    border-radius: .6rem;
+    border: solid #AE5A21;
+}
+div#results>input:active {
+    background-color: var(--background-thumb-active);
+}
+div#results>input:disabled {
+    background-color: var(--background-thumb-inactive);
+    cursor: not-allowed;
+}
+
+div#true-age input[type="number"] {
+    height: 38px;
+    width: 120px;
+    font-size: 1em;
+    border-radius: 0.6rem;
+}
+
+div#true-age input[type="submit"] {
+    user-select: none;
+    text-align: center;
+    padding: 12px 6px;
+    cursor: pointer;
+    background-color: var(--background-thumb);
+    border-radius: .6rem;
+    border: solid #AE5A21;
+}
+div#true-age input[type="submit"]:disabled {
+    background-color: var(--background-thumb-inactive);
+    cursor: not-allowed;
+}
+div#true-age p {
+    font-size: 0.7em;
+    text-decoration: underline 0.1px dashed rgb(160, 160, 160);
+}

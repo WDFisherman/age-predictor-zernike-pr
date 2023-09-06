@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leeftijd voorspeller voor Zpannend Zernike 2023. 
+    Voor het voorspellen van leeftijden 6-85 jaar met 1 simpele vraag en 3 simpele meetbare activiteiten, 
+    bedoeld om aankomende studenten de kracht van computers en informatie in de biologische wereld te laten zien.">
+    <meta name="keywords" content="educatie, hanze, zernike, zpannend zernike, bioinformatica, bio-informatica, life-science, biologie, informatica, data-science">
+    <meta name="autor" content="Willem Daniël Visser">
+    <link rel="stylesheet" href="./index.css">
+    <title>Biometrie leeftijdvoorspelling | Zpannend Zernike 2023</title>
+</head>
+<body>
+    <div>
+        <div id="background-info">
+            <h1>Leeftijd raden <cite>- Door: Willem Daniël Visser 2023</cite> </h1>
+            <h3>Flexibiliteit</h3>
+            <p>
+                Flexibiliteit word vaak gemeten met de "range-of-motion". 
+                Hierbij word een of meerdere hoeken gemeten vannaf waar de proefpersoon pijn ervaart. 
+                Een andere meting is de maximale afstand van de hand tot de voet, bij een zittende positie, 
+                met deze leeftijdvoorspeller doen we hetzelfde maar dan staand.
+                Flexibiliteit verminderd vaak naarmate je ouder word, deze vooruitgang is door levenstijl te verminderen. 
+                Hoe meer afstand, voor iemand niet meer verder kan, hoe ouder de persoon waarschijnlijk is.
+            </p>
+            <h3>Reactie snelheid</h3>
+            <p>
+                Snelheid van de reactie op een stimulus verhoogt een beetje bij jonge leeftijd en piekt bij 24 jaar. 
+                Daarna daalt het langzaam tot dit rond de 50/60 jaar significanter aan het dalen is.
+                Hier meten we de reactie snelheid met een zichtbare stimulus, 
+                niet rekening houdend met eventuele computer hardware vertraagingen.
+            </p>
+            <h3>Evenwicht</h3>
+            <p>
+                Iemands staan- en- lopen balans moet worden aangeleerd bij geboorte en piekt niet tot de 3de/4de decenia van het leven.
+                Hoewel iemand zijn/haar balans kan trainen en afhankelijk kan zijn van zijn/haar levenstijl, 
+                is er een algemene daling later in het leven. 
+                En dus bruikbaar voor een leeftijdvoorspelling.
+            </p>
+            <h3>Medicatie</h3>
+            <p>
+                Het aantal medicatie is vaak afhankelijk van iemands gezondheid, 
+                dit kan gelinkt zijn aan (genetische) ziektes voor zowel, 
+                het lichaam(hart of hormoon klachten), 
+                als de geest(depressie, ADHD).
+                Veel kwalen worden pas later in het leven zichtbaar, 
+                of worden pas later opgedaan, 
+                bijvoorbeeld door ongezond te leven.
+                Daarom is er vaak een correlatie tussen het medicatie gebruik en iemands leeftijd.
+            </p>
+        </div>
+        <hr id="center-div">
+        <div id="interactive">
+            <div id="tasks">
+                <div style="display:flex">
+                    <div style="width:410px">
+                        <h2>Hoe ver rijken je vingers van de grond?</h2>
+                        <div id="floor-dist">
+                            <div class="slider" style="--transform-left: 35px">
+                                <div class="num">
+                                    0 cm
+                                </div>
+                                <input type="range" name="vloer-afstand" id="floor-dist-sldr" step="1" min="0" max="50" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <figure id="ground-reaching-guy">
+                        <img src="./toetouch.png" alt="man die niet bij voeten kan, bij voorover buigen">
+                        <figcaption>www.greatcampgames.ca</figcaption>
+                    </figure>
+                </div>
+                <h2>Hoe snel zie jij blauw? (druk op enter voor start)</h2>
+                <div id="timing-spd">
+                    <div id="timer" class="preset">
+                        0 ms
+                    </div>
+                    <figure id="old-woman-speedy">
+                        <img src="./feisty2.jpg" alt="Oude snelle vrouw met rolator">
+                        <figcaption>www.heenenterugnaardeardeche.blogspot.com</figcaption>
+                    </figure>
+                </div>
+                <h2>Hoe lang houd jij je evenwicht?</h2>
+                <div id="balance">
+                    <input type="number" placeholder="Aantal seconden op 1 been..." max="60" min="1">
+                </div>
+                <h2>Hoeveel verschillende soorten medicatie gebruikte je afgelopen 2 jaar?</h2>
+                <div id="medication">
+                    <div class="slider" style="--transform-left: 47px">
+                        <span class="num">
+                            0
+                        </span>
+                        <input type="range" name="aantal-verschillende-medicatie" step="1" min="0" max="10" value="0">
+                        
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="results">
+                <div id="img">
+                    <figure>
+                        <img alt="leuke afbeelding passend bij voorspelde leeftijd" src="" hidden>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="num">
+                    <p>Wij denken dat je:
+                        <br>
+                        <br>
+                        <span>
+                            <span>?? jaar</span> bent
+                        </span>
+                    </p>
+                </div>
+                <input type="button" value="Klik voor resultaat" disabled>
+            </div>
+            <hr>
+            <div id="true-age">
+                <h3>
+                    Wat was je leeftijd werkelijk?
+                </h3>
+                <input type="number" name="werkelijke-leeftijd" min="1" max="135" value="1">
+                <input type="submit" value="Sla op" disabled>
+                <span></span>
+                <p>
+                    Als je op "Sla op" drukt ga je akkoord dat de leeftijd en bovenstaande gegevens worden opgeslagen en verwerkt voor educatief gebruik.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
